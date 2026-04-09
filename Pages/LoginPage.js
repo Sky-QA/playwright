@@ -3,7 +3,7 @@ class LoginPage {
         this.page = page;
         this.emailField = page.locator("#login_email");
         this.pwdField = page.locator("#password");
-        this.loginButton = page.locator("loginformsubmit");
+        this.loginButton = page.getByRole('button', { name: 'Submit' });
     }
 
     async login(email, password){
@@ -19,4 +19,4 @@ class LoginPage {
 
 }
 
-module.exports = LoginPage;
+module.exports = {LoginPage};

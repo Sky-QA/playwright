@@ -9,5 +9,5 @@ test('Login Test', async({page})=>{
     await loginPage.gotoLoginPage();
     await loginPage.login('tianao_zhu@hotmail.com', '25125419zhu');
     await expect(page).toHaveTitle(/.*Free Conference Call International/);
-})
+});
 
